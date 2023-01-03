@@ -1,0 +1,19 @@
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    transition: transform 2s;
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    -ms-transition: transform 2s;
+    -o-transition: transform 2s;
+}
+
+img:hover {
+    transform: rotate(200grad);
+    -webkit-transform: rotate(200grad);
+    -moz-transform: rotate(200grad);
+    -ms-transform: rotate(200grad);
+    -o-transform: rotate(200grad);
+}

@@ -1,0 +1,24 @@
+img {
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    transition: transform 2s;
+    transform-origin: 300px 150px;
+    /* transform-origin: -30% 60%, 30% 60%; */
+    /* transform-origin: -30% 60%; */
+    /* transform-origin: top right; */
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    -ms-transition: transform 2s;
+    -o-transition: transform 2s;
+}
+
+img:hover {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+}

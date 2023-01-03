@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #272727;
+}
+
+.container {
+    width: 450px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.container::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 205%;
+    background-color: #2d3436;
+    opacity: 0.8;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transform: translate(550px, 300px) rotate(45deg);
+    -webkit-transform: translate(550px, 300px) rotate(45deg);
+    -moz-transform: translate(550px, 300px) rotate(45deg);
+    -ms-transform: translate(550px, 300px) rotate(45deg);
+    -o-transform: translate(550px, 300px) rotate(45deg);
+}
+
+.container:hover::before {
+    transform: translate(-50px, -150px) rotate(45deg);
+    -webkit-transform: translate(-50px, -150px) rotate(45deg);
+    -moz-transform: translate(-50px, -150px) rotate(45deg);
+    -ms-transform: translate(-50px, -150px) rotate(45deg);
+    -o-transform: translate(-50px, -150px) rotate(45deg);
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-size: 17px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translate(200px, -200px);
+    -webkit-transform: translate(200px, -200px);
+    -moz-transform: translate(200px, -200px);
+    -ms-transform: translate(200px, -200px);
+    -o-transform: translate(200px, -200px);
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
+
+.container:hover h2 {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transition-delay: 0.3s;
+}
+
+p {
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transform: translate(-200px, 200px);
+    -webkit-transform: translate(-200px, 200px);
+    -moz-transform: translate(-200px, 200px);
+    -ms-transform: translate(-200px, 200px);
+    -o-transform: translate(-200px, 200px);
+}
+
+.container:hover p {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+}
+
+.container a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding: 15px;
+    margin-bottom: 20px;
+    align-self: center;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+}
+
+.container:hover p {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transition-delay: 0.4s;
+}
+
+.container:hover a {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transition-delay: 0.5s;
+}

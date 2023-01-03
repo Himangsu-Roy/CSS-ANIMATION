@@ -1,0 +1,19 @@
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    transition: transform 2s;
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    -ms-transition: transform 2s;
+    -o-transition: transform 2s;
+}
+
+img:hover {
+    transform: translate(-500px, 500px);
+    -webkit-transform: translate(-500px, 500px);
+    -moz-transform: translate(-500px, 500px);
+    -ms-transform: translate(-500px, 500px);
+    -o-transform: translate(-500px, 500px);
+}

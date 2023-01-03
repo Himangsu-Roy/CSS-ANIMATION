@@ -1,0 +1,23 @@
+body {
+    perspective: 500px;
+}
+
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+
+img:hover {
+    transform: rotatey(90deg);
+    -webkit-transform: rotatey(90deg);
+    -moz-transform: rotatey(90deg);
+    -ms-transform: rotatey(90deg);
+    -o-transform: rotatey(90deg);
+}
